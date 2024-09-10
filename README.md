@@ -35,11 +35,11 @@
 
        
        
-<b> 4. 제슨 알아보고 설치하기
+<b> 5. 제슨 알아보고 설치하기
   
   [https://developer.nvidia.com/embedded/learn/jetson-nano-2gb-devkit-user-guide#id-.JetsonNano2GBDeveloperKitUserGuidevbatuu_v1.0-DeveloperKitSetup](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit#write)
 
-<b> 5. image classification  -  Thumbs Project  using ResNet
+<b> 6. image classification  -  Thumbs Project  using ResNet
 
   https://learn.nvidia.com/courses/course?course_id=course-v1:DLI+S-RX-02+V2&unit=block-v1:DLI+S-RX-02+V2+type@vertical+block@aabe204272214ba69309581d388b0734
 
