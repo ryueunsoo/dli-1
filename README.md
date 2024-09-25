@@ -4,6 +4,8 @@
  1. Jetson Nano Setting 준비물
   
         - jetson nano 4gb
+![jetson](https://github.com/user-attachments/assets/a9dd775a-7e79-4527-a89b-60004e20f3d5)
+
   
         - c type power adapter
   
