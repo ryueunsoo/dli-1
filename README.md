@@ -4,7 +4,7 @@
  1. Jetson Nano Setting 준비물
   
         - jetson nano 4gb
-![jetson](https://github.com/user-attachments/assets/a9dd775a-7e79-4527-a89b-60004e20f3d5)
+
 
   
         - c type power adapter
@@ -17,7 +17,9 @@
   
         - 그외 쿨링펜, lcd, 또는 모니터. hdmi
 ```
+<b>
 
+![jetson](https://github.com/user-attachments/assets/fadbd75e-5c73-4563-ac8d-f6779e17bcb3)
 
 <b> 2. jetson nano에 대하여
 
