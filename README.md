@@ -56,6 +56,9 @@ nvgstcapture-1.0 --mode=2 --camsrc=0 --cap-dev-node=0
 1
 0
 ```
+#####  이곳에 사진 넣고 영상 넣을 것  참고 링크 https://ndb796.tistory.com/557
+
+
 <b>  7. 한글 설치 , reboot 한 후 오른쪽 하단 키보드 모양을 오른쪽 마우스 클릭→ configure click
 ```
 참고 링크 https://driz2le.tistory.com/253
