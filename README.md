@@ -83,29 +83,8 @@ dli@dli-desktop:~$ sudo docker run --runtime nvidia -it --rm --network host \
 >     nvcr.io/nvidia/dli/dli-nano-ai:v2.0.2-r32.7.1kr
 ```
 <b>  결과 
-[sudo] password for dli: 
-Unable to find image 'nvcr.io/nvidia/dli/dli-nano-ai:v2.0.2-r32.7.1kr' locally
-v2.0.2-r32.7.1kr: Pulling from nvidia/dli/dli-nano-ai
-f46992f278c2: Pulling fs layer 
-d0ec296fcb76: Pulling fs layer 
-9e18ddc8ca7a: Pulling fs layer 
-457ba495c8e5: Waiting 
-71bca45e35bd: Waiting 
-644761cdc735: Waiting 
-11628dbc31eb: Waiting 
-d364c3700c33: Waiting 
-01869d070b2e: Waiting 
-cc3009375042: Pulling fs layer 
-3e182d6364dc: Pulling fs layer 
-f72feb4812f9: Pulling fs layer 
-151eb940bbec: Pulling fs layer 
-0e9dda2495b9: Pulling fs layer 
-fd65e600965e: Pull complete 
-f8d0f32f7c28: Pull complete 
-Digest: sha256:59e14700bf32581533c36dd0cea814ca063f3497624d10c92d445f93cfd922db
-Status: Downloaded newer image for nvcr.io/nvidia/dli/dli-nano-ai:v2.0.2-r32.7.1kr
-docker: Error response from daemon: error gathering device information while adding custom device "/dev/video0": no such file or directory.
-ERRO[0290] error waiting for container: context canceled 
+![image](https://github.com/user-attachments/assets/634eaeeb-1a8f-4bff-a953-55663eef1c7e)
+
 카메라 없어서 생기는 에러로 카메라 연결하고 다시 명령한다
 dli@dli-desktop:~$ sudo docker run --runtime nvidia -it --rm --network host \
 >     --memory=500M --memory-swap=4G \
