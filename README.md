@@ -110,6 +110,32 @@ root@dli-desktop:/nvdli-nano#
 
 http://192.168.0.152:8888/lab/tree/classification/classification_interactive.ipynb
 
+<b> swap메모리가 적으면 thumup 프로젝트 할 때 동영상이 나오지 않고 사진으로 되어 데이터 수집을 할 수 없다. 그래서 미리 스왑을 해준다
+```
+sudo systemctl disable nvzramconfig
+
+sudo systemctl set-default multi-user.target
+
+sudo fallocate -l 10G /mnt/10GB.swap
+sudo chmod 600 /mnt/10GB.swap
+sudo mkswap /mnt/10GB.swap
+
+sudo su
+echo "/mnt/10GB.swap swap swap defaults 0 0" >> /etc/fstab
+exit
+
+sudo reboot
+```
+
+<b> 시스템을 GUI 모드로 설정:
+
+```
+sudo systemctl set-default graphical.target
+
+reboot
+
+```
+
 <b> Camera
 먼저 카메라를 생성하고 running으로 설정합니다. 사용 중인 카메라 유형(USB 또는 CSI)에 따라 적절한 카메라 선택 라인을 주석 해제합니다. 이 셀을 실행하는 데 몇 초가 걸릴 수 있습니다. jupyterlab에서 실행
 
