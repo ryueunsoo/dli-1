@@ -58,6 +58,9 @@ nvgstcapture-1.0 --mode=2 --camsrc=0 --cap-dev-node=0
 ```
 <b>  7. 한글 설치 , reboot 한 후 오른쪽 하단 키보드 모양을 오른쪽 마우스 클릭→ configure click
 ```
+참고 링크 https://driz2le.tistory.com/253
+```
+```
 sudo apt-get update
 sudo apt-get install fcitx-hangul
 reboot
