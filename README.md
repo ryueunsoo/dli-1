@@ -106,11 +106,18 @@ root@dli-desktop:/nvdli-nano#
 <b> 결과 
 
 ![image](https://github.com/user-attachments/assets/f6f89e60-8b49-478e-ae58-c2238c694679)
+![image](https://github.com/user-attachments/assets/645f81ca-8fb1-49b9-ae38-d118c5e07eb3)
+
+http://192.168.0.152:8888/lab/tree/classification/classification_interactive.ipynb
 
 
 <b> 10. image classification  -  Thumbs Project  using ResNet
 
+
   https://learn.nvidia.com/courses/course?course_id=course-v1:DLI+S-RX-02+V2&unit=block-v1:DLI+S-RX-02+V2+type@vertical+block@aabe204272214ba69309581d388b0734
+
+
+  
 
   <b> 11. image regression  -  Face XY Project
 
