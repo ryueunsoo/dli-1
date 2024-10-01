@@ -100,39 +100,19 @@ cc3009375042: Pulling fs layer
 f72feb4812f9: Pulling fs layer 
 151eb940bbec: Pulling fs layer 
 0e9dda2495b9: Pulling fs layer 
-0e78bdc2f297: Pulling fs layer 
-8dc68d594a4e: Pulling fs layer 
-dd2d5e8a2285: Pulling fs layer 
-20aaffadccad: Pulling fs layer 
-78c1b6a77f2a: Pulling fs layer 
-3ceb5c165377: Pulling fs layer 
-45e21824a7ba: Pulling fs layer 
-8236d27657e2: Pulling fs layer 
-5633157fc0be: Pulling fs layer 
-92ac4d269791: Pulling fs layer 
-40ce8bbe7afb: Pulling fs layer 
-45ac43b06f56: Pulling fs layer 
-8b9584b02d69: Pulling fs layer 
-0d91c6dfa0c1: Pulling fs layer 
-b9dc07c7c1ea: Pulling fs layer 
-3d21f51710b4: Pulling fs layer 
-6360bef962dd: Pulling fs layer 
-f84c639be180: Pulling fs layer 
-6ec5da232ee1: Pulling fs layer 
-d7af86c56fa8: Pulling fs layer 
-ba96052a8cc0: Pull complete 
-2c6468ea0397: Pull complete 
-0c385592fc6a: Pull complete 
-656202f74c65: Pull complete 
-ca047956c9db: Pull complete 
-cb2e38bdd77d: Pull complete 
-ca514b500ede: Pull complete 
-301b1e807492: Pull complete 
-7d1a4f244e1b: Pull complete 
-3db8bbb5c53d: Pull complete 
-146859387b0c: Pull complete 
-8a6258e9e153: Pull complete 
-c566da3518ef: Pull complete 
+fd65e600965e: Pull complete 
+f8d0f32f7c28: Pull complete 
+Digest: sha256:59e14700bf32581533c36dd0cea814ca063f3497624d10c92d445f93cfd922db
+Status: Downloaded newer image for nvcr.io/nvidia/dli/dli-nano-ai:v2.0.2-r32.7.1kr
+docker: Error response from daemon: error gathering device information while adding custom device "/dev/video0": no such file or directory.
+ERRO[0290] error waiting for container: context canceled 
+카메라 없어서 생기는 에러로 카메라 연결하고 다시 명령한다
+dli@dli-desktop:~$ sudo docker run --runtime nvidia -it --rm --network host \
+>     --memory=500M --memory-swap=4G \
+>     --volume ~/nvdli-data:/nvdli-nano/data \
+>     --volume /tmp/argus_socket:/tmp/argus_socket \
+>     --device /dev/video0 \
+>     nvcr.io/nvidia/dli/dli-nano-ai:v2.0.2-r32.7.1kr
 
 <b> 9. image classification  -  Thumbs Project  using ResNet
 
