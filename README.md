@@ -95,6 +95,13 @@ dli@dli-desktop:~$ sudo docker run --runtime nvidia -it --rm --network host \
 >     --device /dev/video0 \
 >     nvcr.io/nvidia/dli/dli-nano-ai:v2.0.2-r32.7.1kr
 
+<b> 결과에 다음과 같은 글이 써진다.
+allow 10 sec for JupyterLab to start @ http://192.168.0.152:8888 (password dlinano)
+JupterLab logging location:  /var/log/jupyter.log  (inside the container)
+root@dli-desktop:/nvdli-nano# 
+웹브라우저를 열고 192.168.0.152:8888 를 친다
+
+
 <b> 9. image classification  -  Thumbs Project  using ResNet
 
   https://learn.nvidia.com/courses/course?course_id=course-v1:DLI+S-RX-02+V2&unit=block-v1:DLI+S-RX-02+V2+type@vertical+block@aabe204272214ba69309581d388b0734
