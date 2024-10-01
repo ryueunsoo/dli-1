@@ -72,7 +72,9 @@ reboot
 <b> 8. 제슨 알아보고 설치하기
   
   [https://developer.nvidia.com/embedded/learn/jetson-nano-2gb-devkit-user-guide#id-.JetsonNano2GBDeveloperKitUserGuidevbatuu_v1.0-DeveloperKitSetup](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit#write)
-<b> image classification 준비
+
+  
+<b> 9. image classification 준비
 ```
 dli@dli-desktop:~$ mkdir -p ~/nvdli-data
 dli@dli-desktop:~$ sudo docker run --runtime nvidia -it --rm --network host \
@@ -101,11 +103,15 @@ JupterLab logging location:  /var/log/jupyter.log  (inside the container)
 root@dli-desktop:/nvdli-nano# 
 웹브라우저를 열고 192.168.0.152:8888 를 친다
 
+<b> 결과 
 
-<b> 9. image classification  -  Thumbs Project  using ResNet
+![image](https://github.com/user-attachments/assets/f6f89e60-8b49-478e-ae58-c2238c694679)
+
+
+<b> 10. image classification  -  Thumbs Project  using ResNet
 
   https://learn.nvidia.com/courses/course?course_id=course-v1:DLI+S-RX-02+V2&unit=block-v1:DLI+S-RX-02+V2+type@vertical+block@aabe204272214ba69309581d388b0734
 
-  <b> 10. image regression  -  Face XY Project
+  <b> 11. image regression  -  Face XY Project
 
   https://learn.nvidia.com/courses/course?course_id=course-v1:DLI+S-RX-02+V2&unit=block-v1:DLI+S-RX-02+V2+type@vertical+block@76a2873eb69946b4928c4f8432e04314
