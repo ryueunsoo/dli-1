@@ -83,6 +83,8 @@ dli@dli-desktop:~$ sudo docker run --runtime nvidia -it --rm --network host \
 >     nvcr.io/nvidia/dli/dli-nano-ai:v2.0.2-r32.7.1kr
 ```
 <b>  결과 
+
+
 ![image](https://github.com/user-attachments/assets/634eaeeb-1a8f-4bff-a953-55663eef1c7e)
 
 카메라 없어서 생기는 에러로 카메라 연결하고 다시 명령한다
