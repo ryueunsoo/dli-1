@@ -110,8 +110,63 @@ root@dli-desktop:/nvdli-nano#
 
 http://192.168.0.152:8888/lab/tree/classification/classification_interactive.ipynb
 
+<b> Camera
+먼저 카메라를 생성하고 running으로 설정합니다. 사용 중인 카메라 유형(USB 또는 CSI)에 따라 적절한 카메라 선택 라인을 주석 해제합니다. 이 셀을 실행하는 데 몇 초가 걸릴 수 있습니다. jupyterlab에서 실행
+
 
 <b> 10. image classification  -  Thumbs Project  using ResNet
+
+```
+# Check device number
+!ls -ltrh /dev/video*
+```
+```
+from jetcam.usb_camera import USBCamera
+from jetcam.csi_camera import CSICamera
+
+# for USB Camera (Logitech C270 webcam), uncomment the following line
+camera = USBCamera(width=224, height=224, capture_device=0) # confirm the capture_device number
+
+# for CSI Camera (Raspberry Pi Camera Module V2), uncomment the following line
+# camera = CSICamera(width=224, height=224, capture_device=0) # confirm the capture_device number
+
+camera.running = True
+print("camera created")
+```
+<b>  Task
+그런 다음 프로젝트 작업 TASK과 수집할 데이터 범주 CATEGORIES를 정의합니다. 선택한 이름으로 여러 데이터세트 DATASETS에 대한 공간을 정의할 수도 있습니다.
+
+작성 중인 분류 작업에 대해 연결된 줄을 주석 해제/수정하고 실행합니다. 이 셀을 실행하는 데 몇 초밖에 걸리지 않습니다
+```
+import torchvision.transforms as transforms
+from dataset import ImageClassificationDataset
+
+TASK = 'thumbs'
+# TASK = 'emotions'
+# TASK = 'fingers'
+# TASK = 'diy'
+
+CATEGORIES = ['thumbs_up', 'thumbs_down']
+# CATEGORIES = ['none', 'happy', 'sad', 'angry']
+# CATEGORIES = ['1', '2', '3', '4', '5']
+# CATEGORIES = [ 'diy_1', 'diy_2', 'diy_3']
+
+DATASETS = ['A', 'B']
+# DATASETS = ['A', 'B', 'C']
+
+TRANSFORMS = transforms.Compose([
+    transforms.ColorJitter(0.2, 0.2, 0.2, 0.2),
+    transforms.Resize((224, 224)),
+    transforms.ToTensor(),
+    transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
+])
+
+datasets = {}
+for name in DATASETS:
+    datasets[name] = ImageClassificationDataset('../data/classification/' + TASK + '_' + name, CATEGORIES, TRANSFORMS)
+    
+print("{} task with {} categories defined".format(TASK, CATEGORIES))
+```
 
 
   https://learn.nvidia.com/courses/course?course_id=course-v1:DLI+S-RX-02+V2&unit=block-v1:DLI+S-RX-02+V2+type@vertical+block@aabe204272214ba69309581d388b0734
