@@ -56,8 +56,7 @@ nvgstcapture-1.0 --mode=2 --camsrc=0 --cap-dev-node=0
 1
 0
 ```
-#####  이곳에 사진 넣고 영상 넣을 것  참고 링크 https://ndb796.tistory.com/557
-
+#####  https://mail.google.com/mail/u/0?ui=2&ik=5c9f376ed7&attid=0.0.1&permmsgid=msg-a:r744308211831990697&th=1924c029cc00e698&view=fimg&fur=ip&sz=s0-l75-ft&attbid=ANGjdJ_GMT757pXjplowzNUprPYTznTgljSzoazruswHviSbZ5Cfgs0IsQcw9EnobDlDf5fHMYHi7xuqHjQlh0iVKtwSUV3oWZ0gb9D0A0_n44FTJZntTyjWDYs8j2Y&disp=emb&realattid=ii_m1riilhj0
 
 <b>  7. 한글 설치 , reboot 한 후 오른쪽 하단 키보드 모양을 오른쪽 마우스 클릭→ configure click
 ```
